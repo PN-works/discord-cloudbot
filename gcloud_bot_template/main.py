@@ -1,3 +1,5 @@
+app = Flask(__name__)
+
 import discord
 from discord.ext import commands
 import os
@@ -18,8 +20,6 @@ TOKEN = os.getenv("DISCORD_TOKEN")
 
 from flask import Flask
 from threading import Thread
-
-app = Flask(__name__)
 
 @app.route('/')
 def home():
