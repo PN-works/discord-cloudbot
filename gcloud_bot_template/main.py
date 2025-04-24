@@ -15,4 +15,6 @@ async def 핑(ctx):
     await ctx.send("퐁!")
 
 TOKEN = os.getenv("DISCORD_TOKEN")
-bot.run(TOKEN)
+if __name__ == "__main__":
+    keep_alive()
+    bot.run(TOKEN)
